@@ -2,6 +2,8 @@
 
 ' Escriba un programa que determine si un número es positivo y menor que 100
 
+Option Explicit ' Para forzar declaración de variables
+
 Sub Main()
 	Dim numero as Integer	' Declaración de variable
 	numero = 0				' Inicialización de variable

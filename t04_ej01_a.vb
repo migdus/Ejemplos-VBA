@@ -3,6 +3,8 @@
 ' Este programa determina si un número entero es negativo
 ' utilizando una estructura Sí-Entonces
 
+Option Explicit ' Para forzar declaración de variables
+
 Sub Main() ' Inicio del proceso de nombre Main
 
 	Dim numero As Integer ' Declaración de entero

@@ -2,6 +2,8 @@
 
 ' Escriba un programa que determine si un número entero n es impar
 
+Option Explicit ' Para forzar declaración de variables
+
 Sub Main()
 	Dim numero As Integer	' Declaración de entero
 	numero = 0				' Inicialización

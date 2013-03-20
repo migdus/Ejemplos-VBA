@@ -4,6 +4,8 @@
 ' la longitud y el área de un círculo, dado r ingresado por el usuario.
 ' El programa debe asumir que PI = 3.14159.
 
+Option Explicit ' Para forzar declaración de variables
+
 Sub Main()
     ' Declaración de variables como números de coma flotante
     ' (números decimales)

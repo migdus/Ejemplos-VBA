@@ -2,6 +2,8 @@
 
 ' Este programa pide una cadena de caracteres y luego la muestra en pantalla
 
+Option Explicit ' Para forzar declaración de variables
+
 Sub Main() ' Inicia función principal
 
 Dim cadena As String ' Declaración de una cadena

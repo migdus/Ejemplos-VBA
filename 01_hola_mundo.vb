@@ -7,6 +7,8 @@
 'Esto es un comentario. Estas líneas son omitidas cuando
 'El compilador analiza y ejecuta el script.
 
+Option Explicit ' Para forzar declaración de variables
+
 'Todos los procesos abren con la palabra Sub seguida del 
 'nombre del proceso y luego unos paréntesis que abren y cierran si
 'no reciben parámetros. Por lo pronto no recibirán parámetros.

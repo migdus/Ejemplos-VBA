@@ -2,6 +2,8 @@
 
 ' Este programa suma dos números
 
+Option Explicit ' Para forzar declaración de variables
+
 Sub Main() ' Inicia función principal
 
 Dim a As Integer ' Declaración de entero (primer número)
