@@ -6,9 +6,13 @@ Option Explicit ' Para forzar declaración de variables
 
 Sub Main()
 	Dim numero as Integer	' Declaración de variable
-	numero = 0				' Inicialización de variable
+	Dim cadena_temp As String 
 	
-	numero = InputBox("Escriba un número") 'Solicitud de un número
+	numero = 0				' Inicialización de variable
+	cadena_temp = ""
+	
+	cadena_temp = InputBox("Escriba un número") 'Solicitud de un número
+	numero = CInt(cadena_temp)
 	
 	' Estructura selectiva con una condicional compuesta
 	' Tiene dos condiciones unidas por un Y lógico

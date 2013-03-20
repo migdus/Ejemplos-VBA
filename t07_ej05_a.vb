@@ -33,11 +33,11 @@ Sub Main()
 	numero_menor = 32767
 	
 	' Pedir la cantidad de números
-	cantidad_numeros = InputBox("¿Cuántos números desea ingresar?")
+	cantidad_numeros = CInt(InputBox("¿Cuántos números desea ingresar?"))
 	
 	' Mientras el contador sea menor a la cantidad de números
 	While cont < cantidad_numeros
-		numero = InputBox("¿Número?")
+		numero = CInt(InputBox("¿Número?"))
 		
 		' Revisar si este número es mayor al número más grande guardado
 		If numero > numero_mayor Then

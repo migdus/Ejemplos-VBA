@@ -8,7 +8,8 @@ Option Explicit
 
 Sub Main()
 	Dim numero_dia As Integer
-	numero_dia = InputBox("¿Número del día de la semana?")
+	' Captura del número de día. CInt() convierte la entrada a Integer
+	numero_dia = CInt(InputBox("¿Número del día de la semana?"))
 	
 	' Estructura de selección múltiple
 	' Se examina el valor de la variable numero_dia

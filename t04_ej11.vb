@@ -11,12 +11,24 @@ Sub Main()
     ' (números decimales)
     Dim pi, diametro, longitud, area As Single
     Dim r As Integer ' Declaración de entero
+		
     pi = 3.14159    ' Inicialización de Pi
     diametro = 0    ' Inicialización
     longitud = 0    ' Inicialización
     area = 0        ' Inicialización
-    
-    r = InputBox("Ingrese el radio del círculo")
+		
+		'Los pasos a continuación se pueden poner en uno solo, y así
+		'no utilizar cadena_temp como en los ejercicios anteriores
+		'Dim cadena_temp As String
+		'cadena_temp = ""
+		'cadena_temp  = InputBox("Ingrese el radio del círculo")
+    'r = CInt(cadena_temp)
+		'En la siguiente línea se pone la función que muestra la ventana que pide
+		'que se introduzca algo (InputBox) dentro de la función que convierte String
+		'a Integer. Así, lo que escriba el usuario y retorne InputBox se convierte en
+		'la entrada de la función CInt
+	
+		r = CInt(InputBox("Ingrese el radio del círculo"))
     
     ' Cálculos
     diametro = 2 * r

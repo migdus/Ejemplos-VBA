@@ -13,7 +13,7 @@ Sub Main()
 	promedio = 0
 	
 	While contador < 15
-		calificacion = InputBox("Calificación no. "+CStr(contador+1))
+		calificacion = CInt(InputBox("Calificación no. "+CStr(contador+1)))
 		promedio = promedio + calificacion
 		contador = contador + 1
 	WEnd

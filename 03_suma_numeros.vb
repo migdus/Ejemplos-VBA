@@ -9,16 +9,26 @@ Sub Main() ' Inicia función principal
 Dim a As Integer ' Declaración de entero (primer número)
 Dim b As Integer ' Declaración de entero (segundo número)
 Dim c As Integer ' Declaración de entero (almacenar el resultado)
-
+Dim cadena_temp As String ' Declaración de cadena temporal, se utiliza para
+													' guardar los datos capturados por teclado, y luego
+													' convertirlos al tipo de dato Integer
+													
 a = 0 ' Inicialización de entero
 b = 0 ' Inicialización de entero
 c = 0 ' Inicialización de entero
+cadena_temp = "" ' Inicialización de cadena con una cadena vacía
 
-'Solicita el primer número y lo asigna a la variable a
-a = InputBox("Ingrese el primer número")
+'Solicita el primer número y lo asigna inicialmente en la variable
+'cadena_temp, y luego se convierte a Integer y se guarda en a
+'esto se hace con ayuda de la función CInt() que toma como parámetro
+' una cadena
+cadena_temp = InputBox("Ingrese el primer número")
+a = CInt(cadena_temp)
 
-'Solicita el segundo número y lo asigna a la variable b
-b = InputBox("Ingrese el segundo número")
+'Solicita el segundo número y lo asigna a la variable b, de la misma
+'forma como se hizo con a
+cadena_temp = InputBox("Ingrese el segundo número")
+b = CInt(cadena_temp)
 
 c = a + b ' Realiza la operación y la asigna a c
 
