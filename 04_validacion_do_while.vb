@@ -20,7 +20,7 @@ Sub main()
     
     'Inicia ciclo do-while
     Do
-        'Se ejecuta todo lo que se encuentra en este bloque una vez.
+        'Se ejecuta todo lo que se encuentra en este bloque al menos una vez.
         'Luego verifica la condición, y si esta es verdadera, vuelve y ejecuta
         'el bloque de código dentro del do-while.
         'Si en algún momento la condición es falsa, la ejecución continúa por
