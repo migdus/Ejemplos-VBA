@@ -25,7 +25,7 @@ Sub main()
     'declarar la matriz de forma dinámica.
     'Al valor de número de filas y columnas se les resta uno, pues los índices arrancan en cero.
     
-    ReDim m(0 To num_filas - 1, 0 To num_columnas - 1)
+    ReDim m(num_filas - 1, num_columnas - 1)
 
     ' Ciclo para capturar los valores de la matriz
     For i = 0 To num_filas - 1 ' Controla la posición de la fila

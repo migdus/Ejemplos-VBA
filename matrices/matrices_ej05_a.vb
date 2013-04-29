@@ -1,7 +1,6 @@
 ' Autor: Miguel Dussán
 
-' Escriba un programa que permita crear una matriz del tamaño especificado por el usuario,
-' y le permita introducir valores numéricos en ella.
+' Escriba un programa que capture una matriz y determine el número mayor.
 
 Option Explicit
 
@@ -9,8 +8,10 @@ Sub main()
     Dim m() As Integer ' Matriz
     
     Dim num_filas, num_columnas As Integer ' Almacenan las dimensiones de la matriz
-    
+    Dim mayor As Integer ' Numero mayor encontrado.
     Dim i, j As Integer ' Variables de control del ciclo
+
+    mayor = -1 ' Suponiendo que el usuario ingresa números positivos
     
     num_filas = Val(InputBox("¿Cuántas filas desea introducir?"))
     
@@ -29,15 +30,16 @@ Sub main()
             m(i, j) = Val(InputBox("Escriba un valor para la posición " + CStr(i) + "," + CStr(j)))
         Next
     Next
-    
-    ' Mostrar los valores en la hoja de cálculo
-    ' Primer ciclo: recorre la matriz por filas
-    For i = 0 To num_filas - 1
-        ' Segundo ciclo: recorre la matriz por columnas
-        For j = 0 To num_columnas - 1
-            ' Escribir valores en la hoja de cálculo
-            Cells(i + 1, j + 1) = m(i, j)
+
+    ' Ciclo para recorrer la matriz y encontrar el número mayor
+     For i = 0 To num_filas - 1 ' Controla la posición de la fila
+        For j = 0 To num_columnas - 1 ' Controla la posición de la columna
+            If m(i, j) > mayor Then
+        mayor = m(i, j)
+        End If
         Next
     Next
+
+    MsgBox ("El número mayor es: " + CStr(mayor))
 
 End Sub
